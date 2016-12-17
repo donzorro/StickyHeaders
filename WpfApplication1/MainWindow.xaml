@@ -44,171 +44,238 @@
             <Border
                 Margin="0,0,0,0"
                 Background="#1f1f1f"
-                Padding="5"
                 TextBlock.Foreground="White">
-                <DockPanel
-                    LastChildFill="False">
-
+                <Grid>
                     <Border
-                        Height="32"
-                        BorderBrush="Transparent"
-                        BorderThickness="2"
-                        CornerRadius="4"
-                        DockPanel.Dock="Left">
-                        <StackPanel
-                            Orientation="Horizontal">
-                            <TextBlock
-                                Margin="10,0,0,0"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                FontWeight="Bold"
-                                Foreground="#800080"
-                                Text="MBS" />
-                            <TextBlock
-                                Margin="10,0"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                DockPanel.Dock="Left"
-                                FontSize="16"
-                                Text="#1312" />
-                        </StackPanel>
+                        Height="80"
+                        BorderBrush="Black"
+                        BorderThickness="0,0,0,2">
+                        <Grid>
 
+                            <Rectangle
+                                Width="170"
+                              
+                              
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Stretch"
+                                Fill="Black"
+                                Opacity="0.3" />
+                            <Rectangle
+                                Width="150"
+                         
+                              
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Stretch"
+                                Fill="Black"
+                                Opacity="1" />
+
+
+                            <DockPanel
+                                Margin="170,0,0,40"
+                                LastChildFill="False">
+
+                                <Border
+                                    Height="32"
+                                    BorderBrush="Transparent"
+                                    BorderThickness="2"
+                                    CornerRadius="4"
+                                    DockPanel.Dock="Left">
+                                    <StackPanel
+                                        Orientation="Horizontal">
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            FontSize="16"
+                                            FontWeight="Bold"
+                                            Foreground="#800080"
+                                            Text="MBS" />
+                                        <TextBlock
+                                            Margin="10,0"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            DockPanel.Dock="Left"
+                                            FontSize="16"
+                                            Text="#1312" />
+                                    </StackPanel>
+
+                                </Border>
+                               
+                            </DockPanel>
+
+                            <DockPanel
+                                Margin="180,40,00,0"
+                                HorizontalAlignment="Left"
+                                DockPanel.Dock="Bottom"
+                                LastChildFill="False">
+
+
+
+                                <Viewbox
+                                    Width="20"
+                                    Height="20"
+                                    Margin="5,0,0,0"
+                                    DockPanel.Dock="Right">
+                                    <Canvas
+                                        Width="20"
+                                        Height="20">
+                                        <Path
+                                            Data="M8,5.14V19.14L19,12.14L8,5.14Z"
+                                            Fill="White" />
+                                    </Canvas>
+                                </Viewbox>
+
+                                <Viewbox
+                                    Width="20"
+                                    Height="20"
+                                    Margin="5,5,0,0"
+                                    DockPanel.Dock="Right">
+                                    <Canvas
+                                        Width="24"
+                                        Height="24">
+                                        <Path
+                                            Data="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z"
+                                            Fill="White" />
+                                    </Canvas>
+                                </Viewbox>
+
+                            </DockPanel>
+                            
+                            <Viewbox
+                                x:Name="expand"
+                                Width="28"
+                                Height="28"
+                                Margin="5"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Bottom">
+                                <Canvas
+                                    Width="24"
+                                    Height="24">
+                                    <Path
+                                        Data="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                                        Fill="white" />
+                                </Canvas>
+                            </Viewbox>
+
+                            <Viewbox
+                                x:Name="buttonclose"
+                                Width="20"
+                                Height="20"
+                                Margin="7"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top">
+                                <Canvas
+                                    Width="24"
+                                    Height="24">
+                                    <Path
+                                        Data="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+                                        Fill="White" />
+                                </Canvas>
+                            </Viewbox>
+                        </Grid>
                     </Border>
-
-
-                    <Viewbox
-                        x:Name="CloseIcon"
-                        Width="20"
-                        Height="20"
-                        Margin="10,5,10,0"
-                        DockPanel.Dock="Right">
-                        <Canvas
-                            Width="24"
-                            Height="24">
-                            <Path
-                                Data="M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,3H17M8.17,8.58L10.59,11L8.17,13.41L9.59,14.83L12,12.41L14.41,14.83L15.83,13.41L13.41,11L15.83,8.58L14.41,7.17L12,9.58L9.59,7.17L8.17,8.58Z"
-                                Fill="#800080" />
-                        </Canvas>
-
-                    </Viewbox>
-
-                    <Viewbox
-                        Width="20"
-                        Height="20"
-                        Margin="5,0,0,0"
-                        DockPanel.Dock="Right">
-                        <Canvas
-                            Width="20"
-                            Height="20">
-                            <Path
-                                Data="M8,5.14V19.14L19,12.14L8,5.14Z"
-                                Fill="White" />
-                        </Canvas>
-                    </Viewbox>
-
-                    <Viewbox
-                        Width="20"
-                        Height="20"
-                        Margin="5,5,0,0"
-                        DockPanel.Dock="Right">
-                        <Canvas
-                            Width="24"
-                            Height="24">
-                            <Path
-                                Data="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z"
-                                Fill="White" />
-                        </Canvas>
-                    </Viewbox>
-
-
-                </DockPanel>
-
+                </Grid>
             </Border>
         </DataTemplate>
 
     </Window.Resources>
 
     <Grid>
-        <ListBox
-            Margin="10"
-            demo:HeaderPersister.HeaderTemplate="{StaticResource HeaderTemplate}"
-            demo:HeaderPersister.IsEnabled="True"
+        <TabControl
             Background="Transparent"
-            BorderBrush="Transparent"
-            ItemsSource="{Binding Source={StaticResource commits}}"
-            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-            SelectionMode="Extended"
-            Visibility="Visible">
-            <ListBox.GroupStyle>
-                <GroupStyle
-                    HeaderStringFormat="dddd, MMMM dd, yyyy"
-                    HeaderTemplate="{StaticResource HeaderTemplate}" />
-            </ListBox.GroupStyle>
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <DockPanel>
-                        <StackPanel
-                            Margin="0,5,5,5"
-                            VerticalAlignment="Center"
-                            DockPanel.Dock="Left"
-                            Orientation="Horizontal">
-                            <Ellipse
-                                Width="10"
-                                Height="10"
-                                Margin="10"
-                                Fill="#656565" />
-                            <Viewbox
-                                Width="20"
-                                Height="20">
-                                <Canvas
-                                    Width="24"
-                                    Height="24">
-                                    <Path
-                                        Panel.ZIndex="10"
-                                        Data="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M6.12,15.5L9.86,19.24L11.28,17.83L8.95,15.5L11.28,13.17L9.86,11.76L6.12,15.5M17.28,15.5L13.54,11.76L12.12,13.17L14.45,15.5L12.12,17.83L13.54,19.24L17.28,15.5Z"
-                                        Fill="#4f4e4e" />
-                                    <Rectangle
-                                        Canvas.Left="4"
-                                        Canvas.Top="10"
-                                        Width="15"
+            TabStripPlacement="Bottom">
+            <TabItem
+                Header="Playlist">
+                <ListBox
+                    Margin="10"
+                    demo:HeaderPersister.HeaderTemplate="{StaticResource HeaderTemplate}"
+                    demo:HeaderPersister.IsEnabled="True"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    ItemsSource="{Binding Source={StaticResource commits}}"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                    SelectionChanged="ListBox_SelectionChanged"
+                    SelectionMode="Extended"
+                    Visibility="Visible">
+                    <ListBox.GroupStyle>
+                        <GroupStyle
+                            HeaderStringFormat="dddd, MMMM dd, yyyy"
+                            HeaderTemplate="{StaticResource HeaderTemplate}" />
+                    </ListBox.GroupStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <StackPanel
+                                    Margin="0,5,5,5"
+                                    VerticalAlignment="Center"
+                                    DockPanel.Dock="Left"
+                                    Orientation="Horizontal">
+                                    <Ellipse
+                                        Width="10"
                                         Height="10"
-                                        Panel.ZIndex="5"
-                                        Fill="White" />
-
-                                </Canvas>
-                            </Viewbox>
+                                        Margin="10"
+                                        Fill="#656565" />
+                                   
 
 
-                        </StackPanel>
-                        <StackPanel
-                            VerticalAlignment="Center">
-                            <TextBlock
-                                Foreground="#007ACC"
-                                Text="Inquiry / 1"
-                                TextTrimming="CharacterEllipsis" />
-                            <StackPanel
-                                Orientation="Horizontal"
-                                TextElement.Foreground="#6d6d6d">
-                                <TextBlock
-                                    Text="{Binding Path=Hash}" />
-                                <TextBlock
-                                    Text=" by " />
-                                <TextBlock
-                                    Text="{Binding Path=User}" />
-                                <TextBlock
-                                    Text=" &lt;" />
-                                <TextBlock
-                                    Text="{Binding Path=Email}" />
-                                <TextBlock
-                                    Text="&gt;, " />
-                                <TextBlock
-                                    Text="{Binding Path=Date, StringFormat=MM/dd/yyyy}" />
-                            </StackPanel>
-                        </StackPanel>
-                    </DockPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+                                </StackPanel>
+                                <StackPanel
+                                    VerticalAlignment="Center">
+                                    <TextBlock
+                                        Foreground="#007ACC"
+                                        Text="Inquiry / 1"
+                                        TextTrimming="CharacterEllipsis" />
+                                    <StackPanel
+                                        Orientation="Horizontal"
+                                        TextElement.Foreground="#6d6d6d">
+                                        <TextBlock
+                                            Text="{Binding Path=Hash}" />
+                                        <TextBlock
+                                            Text=" by " />
+                                        <TextBlock
+                                            Text="{Binding Path=User}" />
+                                        <TextBlock
+                                            Text=" &lt;" />
+                                        <TextBlock
+                                            Text="{Binding Path=Email}" />
+                                        <TextBlock
+                                            Text="&gt;, " />
+                                        <TextBlock
+                                            Text="{Binding Path=Date, StringFormat=MM/dd/yyyy}" />
+                                        
+                                        
+                                    </StackPanel>
+                                    
+                                    
+                                </StackPanel>
+                                <Viewbox
+                                    Margin="10,0,0,0"
+                                    Width="20"
+                                    Height="20">
+                                    <Canvas
+                                        Width="24"
+                                        Height="24">
+                                        <Path
+                                            Panel.ZIndex="10"
+                                            Data="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M6.12,15.5L9.86,19.24L11.28,17.83L8.95,15.5L11.28,13.17L9.86,11.76L6.12,15.5M17.28,15.5L13.54,11.76L12.12,13.17L14.45,15.5L12.12,17.83L13.54,19.24L17.28,15.5Z"
+                                            Fill="#4f4e4e" />
+                                        <Rectangle
+                                            Canvas.Left="4"
+                                            Canvas.Top="10"
+                                            Width="15"
+                                            Height="10"
+                                            Panel.ZIndex="5"
+                                            Fill="White" />
+
+                                    </Canvas>
+                                </Viewbox>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </TabItem>
+            <TabItem
+                Header="Library" />
+        </TabControl>
     </Grid>
 </Window>
